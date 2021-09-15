@@ -1,0 +1,90 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+h1 {
+  font-family: "Jost", sans-serif;
+}
+
+@keyframes imganimation {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.separator {
+  width: 120px;
+  height: 5px;
+  margin: 15px auto 40px auto;
+  position: relative;
+
+  .gray {
+    width: 120px;
+    height: 1px;
+    background-color: $gray;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: 2px;
+  }
+
+  .blue {
+    width: 45px;
+    height: 5px;
+    background-color: $light-blue;
+    position: absolute;
+    left: 50%;
+    margin-left: -22.5px;
+    top: 0px;
+  }
+}
+
+.accordion-item {
+  border: 0px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 0px !important;
+
+  .accordion-button:not(.collapsed) {
+    color: $light-blue;
+    box-shadow: none;
+  }
+
+  .accordion-button {
+    background-color: $white;
+    border: 0px;
+
+    color: $dark-blue;
+    line-height: 28px;
+
+    span,
+    i.fas {
+      color: $light-blue;
+      font-size: 24px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.go-to-top {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: $light-blue;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+
+  .fas {
+    color: #fff;
+  }
+}

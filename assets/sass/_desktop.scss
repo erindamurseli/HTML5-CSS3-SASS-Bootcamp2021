@@ -1,0 +1,690 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin-top: 81px;
+}
+
+/* NAVBAR Section */
+.navbar {
+  background-color: $dark-blue !important;
+  position: fixed;
+  width: 100%;
+  height: 81px;
+  z-index: 99999999999;
+  top: 0px;
+  left: 0px;
+
+  .navbar-brand {
+    color: #fff;
+    font-size: 26px;
+    font-family: "Jost", sans-serif;
+  }
+
+  .navbar-nav a {
+    color: #fff;
+
+    &:hover {
+      color: $light-blue;
+    }
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .dropdown-menu a {
+    color: $dark-blue;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  .active {
+    color: $light-blue !important;
+  }
+
+  .border-primary {
+    border-color: $light-blue !important;
+    &:hover {
+      color: $white !important;
+      background-color: $light-blue !important;
+    }
+  }
+}
+
+/* HERO Section */
+.hero {
+  background-color: $dark-blue;
+  color: $white;
+  padding: 100px 0px;
+
+  a.btn-primary {
+    border: 0px;
+    background-color: $light-blue !important;
+    &:hover {
+      background-color: $light-blue-a !important;
+    }
+  }
+
+  a.btn-link {
+    color: $white;
+    margin-left: 10px;
+
+    &:hover i.far {
+      color: $light-blue;
+    }
+  }
+
+  i.far {
+    font-size: 30px !important;
+    padding-right: 10px;
+  }
+
+  img {
+    position: relative;
+    animation: imganimation 6s infinite;
+  }
+}
+
+/* CLIENTS Section */
+.clients {
+  padding: 40px 0px;
+  background-color: $light-gray;
+
+  img {
+    width: 50%;
+    display: block;
+    margin: 0px auto;
+    filter: grayscale(100%);
+
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      filter: grayscale(0%);
+    }
+  }
+}
+
+/* ABOUT US Section */
+.about-us {
+  padding: 60px 0px;
+
+  h1 {
+    color: $dark-blue;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+
+    li {
+      line-height: 35px;
+    }
+
+    .fas {
+      color: $light-blue;
+      padding-right: 10px;
+    }
+  }
+
+  .btn-primary {
+    color: $light-blue;
+    border: 2px solid $light-blue;
+    background-color: #fff;
+
+    &:hover {
+      color: $white;
+      background-color: $light-blue;
+    }
+  }
+}
+
+/* WHY US Section */
+.why-us {
+  padding: 90px 0px;
+  background-color: $light-gray;
+
+  h3 {
+    color: $dark-blue;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+
+    span {
+      font-family: "Jost", sans-serif;
+    }
+  }
+
+  p {
+    color: #888;
+  }
+}
+
+/* SKILLS Section */
+.skills {
+  padding: 60px 0px;
+
+  h3 {
+    color: $dark-blue;
+    font-family: "Jost", sans-serif;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+
+  p {
+    color: #444;
+    margin-bottom: 40px;
+  }
+
+  .skill {
+    margin-top: 20px;
+
+    .progress {
+      border-radius: 0px;
+    }
+
+    .progress-bar {
+      background-color: $dark-blue;
+    }
+  }
+}
+
+/* SERVICES Section */
+.services {
+  padding: 60px 0px;
+  background-color: $light-gray;
+
+  .row {
+    margin-top: 50px;
+  }
+
+  .item {
+    background-color: $white;
+    padding: 50px 30px;
+    box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+
+    h4 {
+      color: $dark-blue;
+      padding: 15px 0px;
+      margin: 0px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    .fas,
+    .far {
+      font-size: 34px;
+      color: $light-blue;
+    }
+  }
+
+  .item:hover {
+    margin-top: -15px;
+    h4 {
+      color: $light-blue;
+    }
+  }
+}
+
+/* GO TO ACTION Section */
+.go-to-action {
+  color: $white;
+  padding: 100px 0px;
+  background-image: url(../img/cta-bg.jpg);
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 1000px $dark-blue-a;
+
+  h3 {
+    font-family: "Jost", sans-serif;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .btn-primary {
+    background-color: transparent;
+    border-color: $white;
+    font-family: "Jost", sans-serif;
+
+    &:hover {
+      background-color: $light-blue;
+      border-color: $light-blue;
+    }
+  }
+}
+
+/* PORTOFOLIO Section */
+.portofolio {
+  padding: 60px 0px;
+
+  h1 {
+    font-family: "Jost", sans-serif;
+    color: $dark-blue;
+  }
+
+  .nav-pills .nav-link {
+    color: #000;
+    margin: 0px 10px;
+
+    &:hover {
+      color: $white;
+      background-color: $light-blue;
+    }
+  }
+
+  .nav-pills .nav-link.active {
+    color: $white;
+    background-color: $light-blue;
+  }
+
+  .item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    img {
+      -moz-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .details {
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      visibility: hidden;
+
+      -moz-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+
+      color: $white;
+      height: 80px;
+      padding: 0px 15px;
+      background-color: $dark-blue-a;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        padding: 0px 8px;
+      }
+
+      p {
+        margin: 0px;
+      }
+    }
+  }
+
+  .item:hover {
+    img {
+      transform: scale(1.2);
+    }
+
+    .details {
+      visibility: visible;
+    }
+  }
+}
+
+/* TEAM Section */
+.team {
+  padding: 60px 0px;
+  background-color: $light-gray;
+
+  h1 {
+    font-family: "Jost", sans-serif;
+    color: $dark-blue;
+  }
+
+  .row {
+    margin-top: 50px;
+  }
+
+  .item {
+    background-color: $white;
+    padding: 40px 20px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+
+    .member-info {
+      padding-left: 25px;
+
+      h4 {
+        color: $dark-blue-a;
+        font-family: "Jost", sans-serif;
+      }
+
+      hr {
+        width: 60px;
+        background-color: $dark-blue-a;
+      }
+
+      .fab {
+        font-size: 14px;
+        color: $dark-blue;
+        text-align: center;
+        background-color: $light-gray;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+/* PRICING Section */
+.pricing {
+  padding: 60px 0px;
+
+  h1 {
+    font-family: "Jost", sans-serif;
+    color: $dark-blue;
+  }
+
+  .row {
+    margin-top: 50px;
+  }
+
+  .box {
+    background-color: $white;
+    border-radius: 10px;
+    height: 635px;
+    max-height: 635px;
+    padding: 80px 30px;
+    box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
+
+    h3 {
+      color: $dark-blue;
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 18px;
+      color: $light-blue;
+      span {
+        color: $dark-blue;
+        display: block;
+        sup {
+          font-size: 28px;
+        }
+        font-size: 48px;
+      }
+    }
+
+    a {
+      color: $light-blue;
+      border: 2px solid $light-blue;
+      background-color: $white;
+
+      &:hover {
+        color: $white;
+        background-color: $light-blue;
+      }
+    }
+
+    a.active {
+      color: $white;
+      background-color: $light-blue;
+    }
+
+    ul {
+      padding: 0px;
+      margin: 60px 0px;
+      list-style-type: none;
+
+      li {
+        color: rgb(153, 152, 152);
+        line-height: 40px;
+
+        span {
+          color: $gray;
+          text-decoration: line-through;
+        }
+      }
+
+      .fas {
+        padding-right: 10px;
+      }
+
+      .fa-check {
+        color: turquoise;
+      }
+
+      .fa-times {
+        color: $gray;
+      }
+    }
+  }
+
+  .featured {
+    border-top: 5px solid $light-blue;
+  }
+}
+
+/* FAQ Section */
+.faq {
+  padding: 60px 0px;
+  background-color: $light-gray;
+
+  h1 {
+    font-family: "Jost", sans-serif;
+    color: $dark-blue;
+  }
+
+  .accordion {
+    margin-top: 50px;
+  }
+}
+
+/* CONTACT US Section */
+.contact-us {
+  padding: 60px 0px;
+
+  h1 {
+    font-family: "Jost", sans-serif;
+    color: $dark-blue;
+  }
+
+  .row {
+    margin-top: 50px;
+  }
+
+  .outer-box {
+    height: 648px;
+    max-height: 648px;
+    background-color: $white;
+    padding: 30px;
+    box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%);
+    border-top: 5px solid $light-blue;
+    border-bottom: 5px solid $light-blue;
+  }
+
+  .box {
+    margin-bottom: 20px;
+
+    .icon {
+      padding-right: 30px;
+      .fas,
+      .far {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        border-radius: 50%;
+        text-align: center;
+        color: $dark-blue-a;
+        background-color: $light-gray;
+      }
+    }
+
+    .details {
+      h4 {
+        color: $dark-blue;
+        font-family: "Jost", sans-serif;
+      }
+      p {
+        color: $light-blue;
+        margin: 0px;
+      }
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  form {
+    label {
+      line-height: 50px;
+    }
+
+    .btn-primary {
+      background-color: $light-blue;
+      border: 0px;
+      margin-top: 30px;
+    }
+  }
+}
+
+/* NEWSLETTER Section */
+.newsletter {
+  padding: 80px 0px;
+  background-color: $light-gray;
+
+  h3 {
+    color: $dark-blue;
+    font-family: "Jost", sans-serif;
+  }
+
+  p {
+    margin-bottom: 0px;
+    line-height: 60px;
+  }
+
+  form {
+    width: 40%;
+    margin: 30px auto 0px auto;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 6%);
+    text-align: left;
+
+    input[type="email"] {
+      border: 0;
+      padding: 4px 8px;
+      width: calc(100% - 100px);
+    }
+
+    input[type="submit"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border: 0;
+      background: none;
+      font-size: 16px;
+      padding: 0 20px;
+      background: #47b2e4;
+      color: #fff;
+      transition: 0.3s;
+      border-radius: 50px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+/* FOOTER Section */
+footer {
+  padding: 60px 0px;
+
+  h3,
+  h4 {
+    color: $dark-blue;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+
+    li {
+      line-height: 40px;
+    }
+
+    a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .fas {
+      font-size: 12px;
+      color: $light-blue;
+    }
+  }
+
+  .fab {
+    font-size: 14px;
+    color: $white;
+    text-align: center;
+    background-color: $light-blue;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
+/* COPYRIGHTS Section */
+.copyrights {
+  background-color: $dark-blue;
+  color: $white;
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  a {
+    color: $light-blue;
+  }
+}
